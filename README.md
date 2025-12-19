@@ -733,26 +733,3 @@ All configurable parameters are available through the `EvaluationConfig` datacla
 This project was developed as part of the NLP Course at Warsaw University of Technology, Winter 2025.
 
 ---
-
-## Acknowledgments
-
-- HuggingFace for the Transformers library
-- Qwen team for the Qwen models
-- The NLP course instructors and TAs
-
----
-
-## Version History
-
-**Current Version**: 2.0 (Post Code Review Improvements)
-
-**Key Improvements:**
-- ✅ Configuration management system
-- ✅ Memory-efficient batch processing
-- ✅ Comprehensive logging system
-- ✅ Improved judge prompt with few-shot examples
-- ✅ Multi-turn conversation edge case handling
-- ✅ Unit test suite
-- ✅ Better error handling and validation
-- ✅ Type hints throughout
-- ✅ CSV flattening for nested structures
