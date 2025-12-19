@@ -124,6 +124,12 @@ Examples:
         help="Maximum tokens to generate"
     )
     
+    parser.add_argument(
+        "--judge-model",
+        type=str,
+        help="Optional separate model to use as judge for factual evaluation"
+    )
+    
     args, unknown = parser.parse_known_args()
     
     # Default to single model if neither specified
@@ -158,6 +164,8 @@ Examples:
         extra_args.extend(["--temperature", str(args.temperature)])
     if args.max_tokens:
         extra_args.extend(["--max-tokens", str(args.max_tokens)])
+    if args.judge_model:
+        extra_args.extend(["--judge-model", args.judge_model])
     
     # Add any unknown arguments (passed through to evaluate.py)
     extra_args.extend(unknown)
